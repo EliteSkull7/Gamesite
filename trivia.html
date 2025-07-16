@@ -1,0 +1,73 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Game Trivia</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header>
+    <h1>Game Trivia</h1>
+  </header>
+
+  <nav>
+    <a href="home.html">Home</a>
+    <a href="portfolio.html">Portfolio</a>
+    <a href="trivia.html">Trivia</a>
+  </nav>
+
+  <div class="container">
+    <aside class="left-sidebar">
+      <h3>Useful Gaming Links</h3>
+      <ul>
+        <li><a href="https://store.steampowered.com/" target="_blank">Steam</a></li>
+        <li><a href="https://store.epicgames.com/" target="_blank">Epic Games</a></li>
+        <li><a href="https://www.humblebundle.com/" target="_blank">Humble Bundle</a></li>
+      </ul>
+    </aside>
+
+    <main class="content">
+      <h2>Quiz for Gamers</h2>
+      <div class="quiz-container">
+        <div class="question">
+          <label>1. Which genre is "Call of Duty"?</label><br>
+          <input type="text" id="q1" placeholder="e.g. RPG, FPS, Puzzle...">
+        </div>
+
+        <div class="question">
+          <label>2. Which category best describes "Silent Hill"?</label><br>
+          <input type="text" id="q2" placeholder="e.g. Horror, FPS, Puzzle...">
+        </div>
+
+        <div class="question">
+          <label>3. What genre is "Pokemon"?</label><br>
+          <input type="text" id="q3" placeholder="e.g. Action, Adventure, Racing...">
+        </div>
+
+        <button onclick="checkAnswers()">Submit Answers</button>
+        <div id="result"></div>
+      </div>
+    </main>
+
+    <aside class="right-sidebar">
+      <h3>Contact Me</h3>
+      <form>
+        <input type="text" placeholder="Your Name" required>
+        <input type="email" placeholder="Your Email" required>
+        <textarea rows="5" placeholder="Your Message" required></textarea>
+        <button type="submit">Submit</button>
+        <button type="reset">Clear</button>
+      </form>
+    </aside>
+  </div>
+
+  <footer>
+    <p>Created on July 14, 2025 |
+      <a href="https://www.instagram.com/shranjayw77/" target="_blank">My Instagram</a> | 
+      <a href="https://github.com/EliteSkull7" target="_blank">My Github</a>
+    </p>
+  </footer>
+
+  <script src="trivia.js"></script>
+</body>
+</html>
